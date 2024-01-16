@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 RUN apt update -y
-RUN apt install apache2 wget unzip curl net-tools telnet -y
+RUN apt install apache2 wget unzip curl net-tools telnet systemd firewalld -y
 ENV DEBIAN_FRONTEND=non-interactive
 #RUN yum clean all
 #RUN service apache2 start
